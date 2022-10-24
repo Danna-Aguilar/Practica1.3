@@ -44,6 +44,21 @@
                                     <action selector="doTapModificar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RbI-1e-iPu"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Texto2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t0y-jZ-kCs">
+                                <rect key="frame" x="16" y="277" width="52" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PGu-LT-5Hu">
+                                <rect key="frame" x="16" y="320" width="116" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Modificar texto 2"/>
+                                <connections>
+                                    <action selector="doTapModificarDos:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rHR-VG-ov8"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -53,7 +68,9 @@
                         <outlet property="lblAdvertencia" destination="eUH-NY-p8y" id="ZrE-D0-EcH"/>
                         <outlet property="lblTexto" destination="efX-tg-dVU" id="bed-vc-zEa"/>
                         <outlet property="swpermiso" destination="p8w-ul-O5u" id="WIZ-1o-H5V"/>
+                        <outlet property="txtTextoDos" destination="t0y-jZ-kCs" id="BIo-1i-gH9"/>
                         <segue destination="50f-do-GUX" kind="show" identifier="goToModificar" id="UO3-UH-Yj5"/>
+                        <segue destination="1y8-O8-voJ" kind="show" identifier="goToModificarDos" id="oSL-3F-ZPE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -93,7 +110,44 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tYQ-hJ-kee" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="921" y="119"/>
+            <point key="canvasLocation" x="974" y="-242"/>
+        </scene>
+        <!--Modificar Dos Controller-->
+        <scene sceneID="cyP-7F-7ZB">
+            <objects>
+                <viewController id="1y8-O8-voJ" customClass="ModificarDosController" customModule="Practica1_3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Eej-zY-XBj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gmd-g1-KS0">
+                                <rect key="frame" x="16" y="129" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T84-tQ-ZnQ">
+                                <rect key="frame" x="153" y="178" width="68" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Actualizar">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="doTapActualizar:" destination="1y8-O8-voJ" eventType="touchUpInside" id="1bo-V1-cps"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                        <viewLayoutGuide key="safeArea" id="Vhl-df-xA4"/>
+                    </view>
+                    <connections>
+                        <outlet property="txtTexto" destination="gmd-g1-KS0" id="IbW-Nq-mhg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DRN-cg-4Ts" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="973.60000000000002" y="466.99507389162562"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hYg-3L-7OZ">

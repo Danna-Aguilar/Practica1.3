@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var lblTexto: UILabel!
     
     @IBOutlet weak var lblAdvertencia: UILabel!
+    @IBOutlet weak var txtTextoDos: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,10 +36,20 @@ class ViewController: UIViewController {
             lblAdvertencia.isHidden = false
         }
     }
+    
+    @IBAction func doTapModificarDos(_ sender: Any) {
+        performSegue(withIdentifier: "goToModificarDos", sender: self)
+    }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToModificar"
+            {
         let destino = segue.destination as! ModificarController
         destino.texto = lblTexto.text
         destino.callbackActualizar = actualizarEtiqueta
+        }else if segue.identifier == "goToModificarDoS" {
+            let destino = segue.destination as! ModificarDosController
+            destino.texto = txtTextoDos.text
+        }
         
     }
     

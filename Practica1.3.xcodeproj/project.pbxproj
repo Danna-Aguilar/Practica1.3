@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D1C0F9F2906DC6000EA0330 /* ModificarDosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1C0F9E2906DC6000EA0330 /* ModificarDosController.swift */; };
 		3D247D892902E1C2009A755B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D247D882902E1C2009A755B /* AppDelegate.swift */; };
 		3D247D8B2902E1C2009A755B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D247D8A2902E1C2009A755B /* ViewController.swift */; };
 		3D247D8E2902E1C2009A755B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D247D8C2902E1C2009A755B /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D1C0F9E2906DC6000EA0330 /* ModificarDosController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModificarDosController.swift; sourceTree = "<group>"; };
 		3D247D852902E1C2009A755B /* Practica1.3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Practica1.3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D247D882902E1C2009A755B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D247D8A2902E1C2009A755B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				3D247D912902E1C9009A755B /* LaunchScreen.storyboard */,
 				3D247D942902E1C9009A755B /* Info.plist */,
 				3D247D9A2902EC36009A755B /* ModificarController.swift */,
+				3D1C0F9E2906DC6000EA0330 /* ModificarDosController.swift */,
 			);
 			path = Practica1.3;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 				3D247D8B2902E1C2009A755B /* ViewController.swift in Sources */,
 				3D247D9B2902EC36009A755B /* ModificarController.swift in Sources */,
 				3D247D892902E1C2009A755B /* AppDelegate.swift in Sources */,
+				3D1C0F9F2906DC6000EA0330 /* ModificarDosController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
